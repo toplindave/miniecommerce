@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./nav.css";
-import { NavLink } from "react-router-dom";
-
+import { NavLink, Link } from "react-router-dom";
+import { CartContext } from "../../feature/ContextProvider";
 function Nav() {
+	const { cart } = useContext(CartContext);
 	return (
 		<nav>
 			<div className="logo">Munchies Emporium</div>
@@ -20,7 +21,9 @@ function Nav() {
 			<div className="signin-signup">
 				{/* you said you will the stuff here */}
 				<div className="nav-cart-container">
-					<button className="cart-icon">cart</button>
+					<Link to="/cart">
+						<button className="cart-icon">{cart.length}</button>
+					</Link>
 					<button className="user"> user</button>
 				</div>
 				<div className="nav-log-in">

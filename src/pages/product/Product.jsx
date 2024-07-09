@@ -5,7 +5,7 @@ import ProductCard from "../../component/productcard/ProductCard";
 import Footer from "../../component/footer/Footer";
 
 const productDisplay = productDatas.map((productData, id) => {
-	return <ProductCard productData={productData} key={id} />;
+	return <ProductCard productData={productData} key={productData.id} />;
 });
 
 function Product() {
@@ -28,8 +28,7 @@ function Product() {
 				</div>
 			</section>
 			<div className="bg">
-			
-			<section className="second-section">{productDisplay}</section>
+				<section className="second-section">{productDisplay}</section>
 			</div>
 			<Footer />
 		</div>

@@ -13,6 +13,7 @@ function Product() {
 		<div className="product">
 			<section className="first-section">
 				<div className="left-container">
+					{/* <div className="overlay"></div> */}
 					{/* incase you need this container for the burger picture */}
 				</div>
 				<div className="right-container">
@@ -26,7 +27,10 @@ function Product() {
 					</div>
 				</div>
 			</section>
+			<div className="bg">
+			
 			<section className="second-section">{productDisplay}</section>
+			</div>
 			<Footer />
 		</div>
 	);

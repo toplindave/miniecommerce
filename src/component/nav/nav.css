@@ -1,0 +1,10 @@
+nav {
+	border: 1px solid grey;
+	display: flex;
+}
+.navigation {
+	border: 1px solid #312ebb;
+}
+.signin-signup {
+	border: 1px solid #85b923;
+}
